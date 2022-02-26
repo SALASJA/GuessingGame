@@ -3,6 +3,7 @@ def main():
 	game = GuessingGame()
 	guess = int(input("enter your guess: "))
 	while guess != game.get_mystery_number():
+		game.round(guess)
 		guess = int(input("enter your guess: "))
 	print("You Won")
 
