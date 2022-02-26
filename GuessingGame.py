@@ -2,10 +2,9 @@ from random import randint
 def main():
 	game = GuessingGame()
 	guess = input("enter your guess: ")
-	while guess != game.get_mystery_number()
+	while guess != game.get_mystery_number():
 		guess = input("enter your guess: ")
 	print("You Won")
-main()
 
 
 
@@ -18,4 +17,6 @@ class GuessingGame:
 		pass
 	
 	def get_mystery_number(self):
-		return 1
+		return self.mystery_number
+		
+main()
